@@ -1,5 +1,10 @@
 # Webscraper_IPSTER
 
+Er is ook een minimalistische tweede versie voor LLM-retrieval beschikbaar in
+de branch `simple-scrape`. Die branch bevat alleen de simpele export met
+vestiging, locatie/adres, telefoon, algemeen e-mailadres en openingstijden,
+zodat een LLM minder kans heeft op retrieval-fouten.
+
 Python scraper voor Stella.nl. Het script haalt alle Nederlandse Stella
 vestigingen op, inclusief contactgegevens, adresinformatie en openingstijden
 voor zowel de fietsenwinkel als de werkplaats.
