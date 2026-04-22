@@ -1,0 +1,2152 @@
+{
+  "bron": {
+    "naam": "Stella Fietsenwinkels",
+    "website": "https://www.stella.nl",
+    "overzicht_url": "https://www.stella.nl/fietsenwinkels",
+    "locaties_endpoint": "https://www.stella.nl/locations/59/search",
+    "gescrapet_op": "2026-04-22T11:57:45+02:00",
+    "tijdzone": "Europe/Amsterdam",
+    "aantal_vestigingen": 12,
+    "toelichting": "Stella publiceert de openingstijden per locatie als Testcenter en Werkplaats. In deze JSON is Testcenter genormaliseerd naar fietsenwinkel. Live open/dicht-status wordt bewust niet opgeslagen, zodat een call-agent geen verouderde scrape-snapshot als actuele status gebruikt.",
+    "contact_toelichting": "De locatiebron bevat noreply-adressen per vestiging. Die worden niet als klantcontact opgeslagen; de JSON gebruikt het algemene klantenservice-adres van Stella.",
+    "correcties": [
+      {
+        "veld": "adres.provincie",
+        "vestiging": "Best",
+        "waarde": "Noord-Brabant",
+        "reden": "De Stella locatiebron geeft Best als Noord-Holland terug, maar Best ligt in Noord-Brabant."
+      }
+    ],
+    "speciale_openingstijden": {
+      "gevonden": true,
+      "gecontroleerde_bronnen": [
+        "https://www.stella.nl/fietsenwinkels",
+        "https://www.stella.nl/fietsenwinkels/amersfoort-1",
+        "https://www.stella.nl/fietsenwinkels/assen",
+        "https://www.stella.nl/fietsenwinkels/best",
+        "https://www.stella.nl/fietsenwinkels/beverwijk",
+        "https://www.stella.nl/fietsenwinkels/breda",
+        "https://www.stella.nl/fietsenwinkels/heerhugowaard",
+        "https://www.stella.nl/fietsenwinkels/houten",
+        "https://www.stella.nl/fietsenwinkels/nunspeet",
+        "https://www.stella.nl/fietsenwinkels/nuth",
+        "https://www.stella.nl/fietsenwinkels/ridderkerk",
+        "https://www.stella.nl/fietsenwinkels/schiedam",
+        "https://www.stella.nl/fietsenwinkels/wijchen"
+      ],
+      "zoekpatronen": [
+        "Let op: Wij zijn van DD-MM t/m DD-MM gesloten",
+        "DD-MM t/m DD-MM gesloten",
+        "speciale openingstijden",
+        "gewijzigde openingstijden",
+        "afwijkende openingstijden",
+        "feestdagopening",
+        "openingstijden ... feestdagen"
+      ],
+      "resultaten": [
+        {
+          "url": "https://www.stella.nl/fietsenwinkels",
+          "vermeldingen": [
+            "Let op: Wij zijn van 25-12 t/m 01-01 gesloten"
+          ]
+        }
+      ],
+      "scan_fouten": [],
+      "agent_instructie": "Gebruik speciale openingstijden alleen als deze in items staan. Als er geen item voor de gevraagde datum is, noem dan dat reguliere openingstijden op feestdagen kunnen afwijken en verwijs naar Stella voor actuele bevestiging."
+    }
+  },
+  "vestigingen": [
+    {
+      "id": 124,
+      "naam": "Stella Amersfoort",
+      "plaats": "Amersfoort",
+      "pagina_url": "https://www.stella.nl/fietsenwinkels/amersfoort-1",
+      "adres": {
+        "straat": "Leusderweg 250",
+        "postcode": "3817 KH",
+        "plaats": "Amersfoort",
+        "provincie": "Utrecht",
+        "land": "NL",
+        "latitude": 52.1405385,
+        "longitude": 5.3782881
+      },
+      "contact": {
+        "telefoon": "088-2526370",
+        "algemene_klantenservice_email": "klantenservice@stellanext.nl",
+        "website": "https://www.stella.nl/fietsenwinkels/amersfoort-1"
+      },
+      "labels": [
+        "Outlet",
+        "Servicecenter",
+        "Testcenters",
+        "Test- en servicecenter"
+      ],
+      "afdelingen_bron": [
+        "Store",
+        "Workshop"
+      ],
+      "speciale_openingstijden": {
+        "gevonden": true,
+        "items": [
+          {
+            "bron": "https://www.stella.nl/fietsenwinkels",
+            "tekst": "Let op: Wij zijn van 25-12 t/m 01-01 gesloten",
+            "type": "sluiting",
+            "periode": {
+              "van": "25-12",
+              "tot_en_met": "01-01",
+              "jaar": null,
+              "opmerking": "De Stella-bron noemt dag en maand, maar geen jaar. Pas deze sluiting toe op de eerstvolgende relevante jaarwisseling."
+            }
+          }
+        ],
+        "agent_instructie": "Gebruik speciale openingstijden alleen als deze in items staan. Als er geen item voor de gevraagde datum is, noem dan dat reguliere openingstijden op feestdagen kunnen afwijken en verwijs naar Stella voor actuele bevestiging."
+      },
+      "openingstijden": {
+        "fietsenwinkel": {
+          "bron_label": "Testcenter",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "10:00",
+              "tot": "17:00",
+              "tekst": "10:00 - 17:00"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        },
+        "werkplaats": {
+          "bron_label": "Werkplaats",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "10:00",
+              "tot": "17:00",
+              "tekst": "10:00 - 17:00"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        }
+      }
+    },
+    {
+      "id": 118,
+      "naam": "Stella Assen",
+      "plaats": "Assen",
+      "pagina_url": "https://www.stella.nl/fietsenwinkels/assen",
+      "adres": {
+        "straat": "Zeilmakerstraat 30",
+        "postcode": "9403 VA",
+        "plaats": "Assen",
+        "provincie": "Drenthe",
+        "land": "NL",
+        "latitude": 53.011357,
+        "longitude": 6.5796824
+      },
+      "contact": {
+        "telefoon": "088-2526371",
+        "algemene_klantenservice_email": "klantenservice@stellanext.nl",
+        "website": "https://www.stella.nl/fietsenwinkels/assen"
+      },
+      "labels": [
+        "Flagshipstore",
+        "Servicecenter",
+        "Ophaal Experience",
+        "Muto",
+        "Testcenters",
+        "Dolle E-bike Outlet Dagen",
+        "Test- en servicecenter"
+      ],
+      "afdelingen_bron": [
+        "Store",
+        "Workshop"
+      ],
+      "speciale_openingstijden": {
+        "gevonden": true,
+        "items": [
+          {
+            "bron": "https://www.stella.nl/fietsenwinkels",
+            "tekst": "Let op: Wij zijn van 25-12 t/m 01-01 gesloten",
+            "type": "sluiting",
+            "periode": {
+              "van": "25-12",
+              "tot_en_met": "01-01",
+              "jaar": null,
+              "opmerking": "De Stella-bron noemt dag en maand, maar geen jaar. Pas deze sluiting toe op de eerstvolgende relevante jaarwisseling."
+            }
+          }
+        ],
+        "agent_instructie": "Gebruik speciale openingstijden alleen als deze in items staan. Als er geen item voor de gevraagde datum is, noem dan dat reguliere openingstijden op feestdagen kunnen afwijken en verwijs naar Stella voor actuele bevestiging."
+      },
+      "openingstijden": {
+        "fietsenwinkel": {
+          "bron_label": "Testcenter",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        },
+        "werkplaats": {
+          "bron_label": "Werkplaats",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        }
+      }
+    },
+    {
+      "id": 106,
+      "naam": "Stella Best",
+      "plaats": "Best",
+      "pagina_url": "https://www.stella.nl/fietsenwinkels/best",
+      "adres": {
+        "straat": "Bosseweg 35",
+        "postcode": "5682 BA",
+        "plaats": "Best",
+        "provincie": "Noord-Brabant",
+        "land": "NL",
+        "latitude": 51.5178457,
+        "longitude": 5.3977127
+      },
+      "contact": {
+        "telefoon": "088-2526372",
+        "algemene_klantenservice_email": "klantenservice@stellanext.nl",
+        "website": "https://www.stella.nl/fietsenwinkels/best"
+      },
+      "labels": [
+        "Flagshipstore",
+        "Servicecenter",
+        "Ophaal Experience",
+        "Muto",
+        "Testcenters",
+        "Dolle E-bike Outlet Dagen",
+        "Ophaal Experience BE",
+        "Test- en servicecenter"
+      ],
+      "afdelingen_bron": [
+        "Store",
+        "Workshop"
+      ],
+      "speciale_openingstijden": {
+        "gevonden": true,
+        "items": [
+          {
+            "bron": "https://www.stella.nl/fietsenwinkels",
+            "tekst": "Let op: Wij zijn van 25-12 t/m 01-01 gesloten",
+            "type": "sluiting",
+            "periode": {
+              "van": "25-12",
+              "tot_en_met": "01-01",
+              "jaar": null,
+              "opmerking": "De Stella-bron noemt dag en maand, maar geen jaar. Pas deze sluiting toe op de eerstvolgende relevante jaarwisseling."
+            }
+          }
+        ],
+        "agent_instructie": "Gebruik speciale openingstijden alleen als deze in items staan. Als er geen item voor de gevraagde datum is, noem dan dat reguliere openingstijden op feestdagen kunnen afwijken en verwijs naar Stella voor actuele bevestiging."
+      },
+      "openingstijden": {
+        "fietsenwinkel": {
+          "bron_label": "Testcenter",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        },
+        "werkplaats": {
+          "bron_label": "Werkplaats",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        }
+      }
+    },
+    {
+      "id": 215,
+      "naam": "Stella Beverwijk",
+      "plaats": "Beverwijk",
+      "pagina_url": "https://www.stella.nl/fietsenwinkels/beverwijk",
+      "adres": {
+        "straat": "Parallelweg 41",
+        "postcode": "1948 NK",
+        "plaats": "Beverwijk",
+        "provincie": "Noord-Holland",
+        "land": "NL",
+        "latitude": 52.4785379,
+        "longitude": 4.6612818
+      },
+      "contact": {
+        "telefoon": "088-2526373",
+        "algemene_klantenservice_email": "klantenservice@stellanext.nl",
+        "website": "https://www.stella.nl/fietsenwinkels/beverwijk"
+      },
+      "labels": [
+        "Servicecenter",
+        "Testcenters",
+        "Hoofdkantoor",
+        "Test- en servicecenter"
+      ],
+      "afdelingen_bron": [
+        "Store",
+        "Workshop"
+      ],
+      "speciale_openingstijden": {
+        "gevonden": true,
+        "items": [
+          {
+            "bron": "https://www.stella.nl/fietsenwinkels",
+            "tekst": "Let op: Wij zijn van 25-12 t/m 01-01 gesloten",
+            "type": "sluiting",
+            "periode": {
+              "van": "25-12",
+              "tot_en_met": "01-01",
+              "jaar": null,
+              "opmerking": "De Stella-bron noemt dag en maand, maar geen jaar. Pas deze sluiting toe op de eerstvolgende relevante jaarwisseling."
+            }
+          }
+        ],
+        "agent_instructie": "Gebruik speciale openingstijden alleen als deze in items staan. Als er geen item voor de gevraagde datum is, noem dan dat reguliere openingstijden op feestdagen kunnen afwijken en verwijs naar Stella voor actuele bevestiging."
+      },
+      "openingstijden": {
+        "fietsenwinkel": {
+          "bron_label": "Testcenter",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        },
+        "werkplaats": {
+          "bron_label": "Werkplaats",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        }
+      }
+    },
+    {
+      "id": 103,
+      "naam": "Stella Breda",
+      "plaats": "Breda",
+      "pagina_url": "https://www.stella.nl/fietsenwinkels/breda",
+      "adres": {
+        "straat": "Ettensebaan 23A",
+        "postcode": "4813 AH",
+        "plaats": "Breda",
+        "provincie": "Noord-Brabant",
+        "land": "NL",
+        "latitude": 51.5811434,
+        "longitude": 4.7390535
+      },
+      "contact": {
+        "telefoon": "088-2526374",
+        "algemene_klantenservice_email": "klantenservice@stellanext.nl",
+        "website": "https://www.stella.nl/fietsenwinkels/breda"
+      },
+      "labels": [
+        "Flagshipstore",
+        "Servicecenter",
+        "Muto",
+        "Testcenters",
+        "Test- en servicecenter"
+      ],
+      "afdelingen_bron": [
+        "Store",
+        "Workshop"
+      ],
+      "speciale_openingstijden": {
+        "gevonden": true,
+        "items": [
+          {
+            "bron": "https://www.stella.nl/fietsenwinkels",
+            "tekst": "Let op: Wij zijn van 25-12 t/m 01-01 gesloten",
+            "type": "sluiting",
+            "periode": {
+              "van": "25-12",
+              "tot_en_met": "01-01",
+              "jaar": null,
+              "opmerking": "De Stella-bron noemt dag en maand, maar geen jaar. Pas deze sluiting toe op de eerstvolgende relevante jaarwisseling."
+            }
+          }
+        ],
+        "agent_instructie": "Gebruik speciale openingstijden alleen als deze in items staan. Als er geen item voor de gevraagde datum is, noem dan dat reguliere openingstijden op feestdagen kunnen afwijken en verwijs naar Stella voor actuele bevestiging."
+      },
+      "openingstijden": {
+        "fietsenwinkel": {
+          "bron_label": "Testcenter",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        },
+        "werkplaats": {
+          "bron_label": "Werkplaats",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        }
+      }
+    },
+    {
+      "id": 85,
+      "naam": "Stella Heerhugowaard",
+      "plaats": "Heerhugowaard",
+      "pagina_url": "https://www.stella.nl/fietsenwinkels/heerhugowaard",
+      "adres": {
+        "straat": "Erasmuslaan 3",
+        "postcode": "1702 GH",
+        "plaats": "Heerhugowaard",
+        "provincie": "Noord-Holland",
+        "land": "NL",
+        "latitude": 52.6693073,
+        "longitude": 4.8385515
+      },
+      "contact": {
+        "telefoon": "088-2526375",
+        "algemene_klantenservice_email": "klantenservice@stellanext.nl",
+        "website": "https://www.stella.nl/fietsenwinkels/heerhugowaard"
+      },
+      "labels": [
+        "Flagshipstore",
+        "Servicecenter",
+        "Muto",
+        "Testcenters",
+        "Test- en servicecenter"
+      ],
+      "afdelingen_bron": [
+        "Store",
+        "Workshop"
+      ],
+      "speciale_openingstijden": {
+        "gevonden": true,
+        "items": [
+          {
+            "bron": "https://www.stella.nl/fietsenwinkels",
+            "tekst": "Let op: Wij zijn van 25-12 t/m 01-01 gesloten",
+            "type": "sluiting",
+            "periode": {
+              "van": "25-12",
+              "tot_en_met": "01-01",
+              "jaar": null,
+              "opmerking": "De Stella-bron noemt dag en maand, maar geen jaar. Pas deze sluiting toe op de eerstvolgende relevante jaarwisseling."
+            }
+          }
+        ],
+        "agent_instructie": "Gebruik speciale openingstijden alleen als deze in items staan. Als er geen item voor de gevraagde datum is, noem dan dat reguliere openingstijden op feestdagen kunnen afwijken en verwijs naar Stella voor actuele bevestiging."
+      },
+      "openingstijden": {
+        "fietsenwinkel": {
+          "bron_label": "Testcenter",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        },
+        "werkplaats": {
+          "bron_label": "Werkplaats",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        }
+      }
+    },
+    {
+      "id": 70,
+      "naam": "Stella Houten",
+      "plaats": "Houten",
+      "pagina_url": "https://www.stella.nl/fietsenwinkels/houten",
+      "adres": {
+        "straat": "Hoofdveste 26",
+        "postcode": "3992 DG",
+        "plaats": "Houten",
+        "provincie": "Utrecht",
+        "land": "NL",
+        "latitude": 52.0253928,
+        "longitude": 5.1410756
+      },
+      "contact": {
+        "telefoon": "088-2526376",
+        "algemene_klantenservice_email": "klantenservice@stellanext.nl",
+        "website": "https://www.stella.nl/fietsenwinkels/houten"
+      },
+      "labels": [
+        "Servicecenter",
+        "Ophaal Experience",
+        "Muto",
+        "Testcenters",
+        "Test- en servicecenter"
+      ],
+      "afdelingen_bron": [
+        "Store",
+        "Workshop"
+      ],
+      "speciale_openingstijden": {
+        "gevonden": true,
+        "items": [
+          {
+            "bron": "https://www.stella.nl/fietsenwinkels",
+            "tekst": "Let op: Wij zijn van 25-12 t/m 01-01 gesloten",
+            "type": "sluiting",
+            "periode": {
+              "van": "25-12",
+              "tot_en_met": "01-01",
+              "jaar": null,
+              "opmerking": "De Stella-bron noemt dag en maand, maar geen jaar. Pas deze sluiting toe op de eerstvolgende relevante jaarwisseling."
+            }
+          }
+        ],
+        "agent_instructie": "Gebruik speciale openingstijden alleen als deze in items staan. Als er geen item voor de gevraagde datum is, noem dan dat reguliere openingstijden op feestdagen kunnen afwijken en verwijs naar Stella voor actuele bevestiging."
+      },
+      "openingstijden": {
+        "fietsenwinkel": {
+          "bron_label": "Testcenter",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        },
+        "werkplaats": {
+          "bron_label": "Werkplaats",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        }
+      }
+    },
+    {
+      "id": 1,
+      "naam": "Stella Nunspeet",
+      "plaats": "Nunspeet",
+      "pagina_url": "https://www.stella.nl/fietsenwinkels/nunspeet",
+      "adres": {
+        "straat": "Oosteinderweg 90",
+        "postcode": "8072 PD",
+        "plaats": "Nunspeet",
+        "provincie": "Gelderland",
+        "land": "NL",
+        "latitude": 52.3885079,
+        "longitude": 5.8142741
+      },
+      "contact": {
+        "telefoon": "088-2526377",
+        "algemene_klantenservice_email": "klantenservice@stellanext.nl",
+        "website": "https://www.stella.nl/fietsenwinkels/nunspeet"
+      },
+      "labels": [
+        "Flagshipstore",
+        "Outlet",
+        "Servicecenter",
+        "Ophaal Experience",
+        "Muto",
+        "Testcenters",
+        "Hoofdkantoor",
+        "Dolle E-bike Outlet Dagen",
+        "Test- en servicecenter"
+      ],
+      "afdelingen_bron": [
+        "Store",
+        "Workshop"
+      ],
+      "speciale_openingstijden": {
+        "gevonden": true,
+        "items": [
+          {
+            "bron": "https://www.stella.nl/fietsenwinkels",
+            "tekst": "Let op: Wij zijn van 25-12 t/m 01-01 gesloten",
+            "type": "sluiting",
+            "periode": {
+              "van": "25-12",
+              "tot_en_met": "01-01",
+              "jaar": null,
+              "opmerking": "De Stella-bron noemt dag en maand, maar geen jaar. Pas deze sluiting toe op de eerstvolgende relevante jaarwisseling."
+            }
+          }
+        ],
+        "agent_instructie": "Gebruik speciale openingstijden alleen als deze in items staan. Als er geen item voor de gevraagde datum is, noem dan dat reguliere openingstijden op feestdagen kunnen afwijken en verwijs naar Stella voor actuele bevestiging."
+      },
+      "openingstijden": {
+        "fietsenwinkel": {
+          "bron_label": "Testcenter",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        },
+        "werkplaats": {
+          "bron_label": "Werkplaats",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        }
+      }
+    },
+    {
+      "id": 82,
+      "naam": "Stella Nuth",
+      "plaats": "Nuth",
+      "pagina_url": "https://www.stella.nl/fietsenwinkels/nuth",
+      "adres": {
+        "straat": "Stationstraat 294",
+        "postcode": "6361 BH",
+        "plaats": "Nuth",
+        "provincie": "Limburg",
+        "land": "NL",
+        "latitude": 50.9174232,
+        "longitude": 5.8825602
+      },
+      "contact": {
+        "telefoon": "088-2526378",
+        "algemene_klantenservice_email": "klantenservice@stellanext.nl",
+        "website": "https://www.stella.nl/fietsenwinkels/nuth"
+      },
+      "labels": [
+        "Flagshipstore",
+        "Servicecenter",
+        "Testcenters",
+        "Test- en servicecenter"
+      ],
+      "afdelingen_bron": [
+        "Store",
+        "Workshop"
+      ],
+      "speciale_openingstijden": {
+        "gevonden": true,
+        "items": [
+          {
+            "bron": "https://www.stella.nl/fietsenwinkels",
+            "tekst": "Let op: Wij zijn van 25-12 t/m 01-01 gesloten",
+            "type": "sluiting",
+            "periode": {
+              "van": "25-12",
+              "tot_en_met": "01-01",
+              "jaar": null,
+              "opmerking": "De Stella-bron noemt dag en maand, maar geen jaar. Pas deze sluiting toe op de eerstvolgende relevante jaarwisseling."
+            }
+          }
+        ],
+        "agent_instructie": "Gebruik speciale openingstijden alleen als deze in items staan. Als er geen item voor de gevraagde datum is, noem dan dat reguliere openingstijden op feestdagen kunnen afwijken en verwijs naar Stella voor actuele bevestiging."
+      },
+      "openingstijden": {
+        "fietsenwinkel": {
+          "bron_label": "Testcenter",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        },
+        "werkplaats": {
+          "bron_label": "Werkplaats",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        }
+      }
+    },
+    {
+      "id": 52,
+      "naam": "Stella Ridderkerk",
+      "plaats": "Ridderkerk",
+      "pagina_url": "https://www.stella.nl/fietsenwinkels/ridderkerk",
+      "adres": {
+        "straat": "Noordenweg 26",
+        "postcode": "2984 AG",
+        "plaats": "Ridderkerk",
+        "provincie": "Zuid-Holland",
+        "land": "NL",
+        "latitude": 51.8735086,
+        "longitude": 4.6041604
+      },
+      "contact": {
+        "telefoon": "088-2526379",
+        "algemene_klantenservice_email": "klantenservice@stellanext.nl",
+        "website": "https://www.stella.nl/fietsenwinkels/ridderkerk"
+      },
+      "labels": [
+        "Flagshipstore",
+        "Servicecenter",
+        "Muto",
+        "Testcenters",
+        "Test- en servicecenter"
+      ],
+      "afdelingen_bron": [
+        "Store",
+        "Workshop"
+      ],
+      "speciale_openingstijden": {
+        "gevonden": true,
+        "items": [
+          {
+            "bron": "https://www.stella.nl/fietsenwinkels",
+            "tekst": "Let op: Wij zijn van 25-12 t/m 01-01 gesloten",
+            "type": "sluiting",
+            "periode": {
+              "van": "25-12",
+              "tot_en_met": "01-01",
+              "jaar": null,
+              "opmerking": "De Stella-bron noemt dag en maand, maar geen jaar. Pas deze sluiting toe op de eerstvolgende relevante jaarwisseling."
+            }
+          }
+        ],
+        "agent_instructie": "Gebruik speciale openingstijden alleen als deze in items staan. Als er geen item voor de gevraagde datum is, noem dan dat reguliere openingstijden op feestdagen kunnen afwijken en verwijs naar Stella voor actuele bevestiging."
+      },
+      "openingstijden": {
+        "fietsenwinkel": {
+          "bron_label": "Testcenter",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        },
+        "werkplaats": {
+          "bron_label": "Werkplaats",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        }
+      }
+    },
+    {
+      "id": 40,
+      "naam": "Stella Schiedam",
+      "plaats": "Schiedam",
+      "pagina_url": "https://www.stella.nl/fietsenwinkels/schiedam",
+      "adres": {
+        "straat": "Overschieseweg 152",
+        "postcode": "3125 AR",
+        "plaats": "Schiedam",
+        "provincie": "Zuid-Holland",
+        "land": "NL",
+        "latitude": 51.924542,
+        "longitude": 4.4092147
+      },
+      "contact": {
+        "telefoon": "088-2526380",
+        "algemene_klantenservice_email": "klantenservice@stellanext.nl",
+        "website": "https://www.stella.nl/fietsenwinkels/schiedam"
+      },
+      "labels": [
+        "Outlet",
+        "Servicecenter",
+        "Muto",
+        "Testcenters",
+        "Dolle E-bike Outlet Dagen",
+        "Test- en servicecenter"
+      ],
+      "afdelingen_bron": [
+        "Store",
+        "Workshop"
+      ],
+      "speciale_openingstijden": {
+        "gevonden": true,
+        "items": [
+          {
+            "bron": "https://www.stella.nl/fietsenwinkels",
+            "tekst": "Let op: Wij zijn van 25-12 t/m 01-01 gesloten",
+            "type": "sluiting",
+            "periode": {
+              "van": "25-12",
+              "tot_en_met": "01-01",
+              "jaar": null,
+              "opmerking": "De Stella-bron noemt dag en maand, maar geen jaar. Pas deze sluiting toe op de eerstvolgende relevante jaarwisseling."
+            }
+          }
+        ],
+        "agent_instructie": "Gebruik speciale openingstijden alleen als deze in items staan. Als er geen item voor de gevraagde datum is, noem dan dat reguliere openingstijden op feestdagen kunnen afwijken en verwijs naar Stella voor actuele bevestiging."
+      },
+      "openingstijden": {
+        "fietsenwinkel": {
+          "bron_label": "Testcenter",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        },
+        "werkplaats": {
+          "bron_label": "Werkplaats",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        }
+      }
+    },
+    {
+      "id": 216,
+      "naam": "Stella Wijchen",
+      "plaats": "Wijchen",
+      "pagina_url": "https://www.stella.nl/fietsenwinkels/wijchen",
+      "adres": {
+        "straat": "Nieuweweg 285",
+        "postcode": "6603 BN",
+        "plaats": "Wijchen",
+        "provincie": "Gelderland",
+        "land": "NL",
+        "latitude": 51.8173867,
+        "longitude": 5.7641904
+      },
+      "contact": {
+        "telefoon": "088-2526381",
+        "algemene_klantenservice_email": "klantenservice@stellanext.nl",
+        "website": "https://www.stella.nl/fietsenwinkels/wijchen"
+      },
+      "labels": [
+        "Testcenters",
+        "Test- en servicecenter"
+      ],
+      "afdelingen_bron": [
+        "Store",
+        "Workshop"
+      ],
+      "speciale_openingstijden": {
+        "gevonden": true,
+        "items": [
+          {
+            "bron": "https://www.stella.nl/fietsenwinkels",
+            "tekst": "Let op: Wij zijn van 25-12 t/m 01-01 gesloten",
+            "type": "sluiting",
+            "periode": {
+              "van": "25-12",
+              "tot_en_met": "01-01",
+              "jaar": null,
+              "opmerking": "De Stella-bron noemt dag en maand, maar geen jaar. Pas deze sluiting toe op de eerstvolgende relevante jaarwisseling."
+            }
+          }
+        ],
+        "agent_instructie": "Gebruik speciale openingstijden alleen als deze in items staan. Als er geen item voor de gevraagde datum is, noem dan dat reguliere openingstijden op feestdagen kunnen afwijken en verwijs naar Stella voor actuele bevestiging."
+      },
+      "openingstijden": {
+        "fietsenwinkel": {
+          "bron_label": "Testcenter",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        },
+        "werkplaats": {
+          "bron_label": "Werkplaats",
+          "dagen": {
+            "maandag": {
+              "dag": "maandag",
+              "bron_dag": "Monday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "dinsdag": {
+              "dag": "dinsdag",
+              "bron_dag": "Tuesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "woensdag": {
+              "dag": "woensdag",
+              "bron_dag": "Wednesday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "donderdag": {
+              "dag": "donderdag",
+              "bron_dag": "Thursday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "vrijdag": {
+              "dag": "vrijdag",
+              "bron_dag": "Friday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:30",
+              "tekst": "09:00 - 17:30"
+            },
+            "zaterdag": {
+              "dag": "zaterdag",
+              "bron_dag": "Saturday",
+              "open": true,
+              "van": "09:00",
+              "tot": "17:00",
+              "tekst": "09:00 - 17:00"
+            },
+            "zondag": {
+              "dag": "zondag",
+              "bron_dag": "Sunday",
+              "open": false,
+              "van": null,
+              "tot": null,
+              "tekst": "Gesloten"
+            }
+          },
+          "opmerkingen": []
+        }
+      }
+    }
+  ]
+}
