@@ -1,7 +1,4 @@
 {
-  "doel": "Minimalistische Stella vestigingsdata voor LLM-retrieval. Bevat alleen locatie, telefoon, algemeen e-mailadres en openingstijden.",
-  "belangrijk": "Gebruik geen live open/dicht-status uit deze data. Bereken die met de actuele datum en tijd in Europe/Amsterdam.",
-  "aantal_vestigingen": 12,
   "vestigingen": [
     {
       "vestiging": "Stella Amersfoort",
