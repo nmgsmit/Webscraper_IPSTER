@@ -27,6 +27,33 @@ Een ander outputpad kan ook:
 python scrape_stella_locations.py --output data/stella_vestigingen_latest.json
 ```
 
+Maak daarna eventueel een minimalistische LLM-versie:
+
+```powershell
+python export_simple_llm_json.py
+```
+
+Standaard schrijft dit script naar:
+
+```text
+data/stella_vestigingen_simple.json
+```
+
+Deze simpele export bevat bewust alleen:
+
+- `vestiging`
+- `plaats`
+- `adres`
+- `telefoon`
+- `email`
+- `speciale_openingstijden`
+- `openingstijden.fietsenwinkel`
+- `openingstijden.werkplaats`
+
+Gebruik deze versie wanneer een LLM zo min mogelijk retrieval-ruis mag krijgen.
+De uitgebreide JSON blijft handig voor debugging, broncontrole en toekomstige
+uitbreidingen.
+
 ## Data
 
 Het script ontdekt de actuele Stella locatie-endpoint vanaf:

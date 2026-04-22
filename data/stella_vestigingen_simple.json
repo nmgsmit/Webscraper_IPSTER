@@ -1,0 +1,367 @@
+{
+  "doel": "Minimalistische Stella vestigingsdata voor LLM-retrieval. Bevat alleen locatie, telefoon, algemeen e-mailadres en openingstijden.",
+  "belangrijk": "Gebruik geen live open/dicht-status uit deze data. Bereken die met de actuele datum en tijd in Europe/Amsterdam.",
+  "aantal_vestigingen": 12,
+  "vestigingen": [
+    {
+      "vestiging": "Stella Amersfoort",
+      "plaats": "Amersfoort",
+      "adres": "Leusderweg 250, 3817 KH Amersfoort",
+      "telefoon": "088-2526370",
+      "email": "klantenservice@stellanext.nl",
+      "speciale_openingstijden": [
+        "Let op: Wij zijn van 25-12 t/m 01-01 gesloten"
+      ],
+      "openingstijden": {
+        "fietsenwinkel": {
+          "maandag": "10:00 - 17:00",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        },
+        "werkplaats": {
+          "maandag": "10:00 - 17:00",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        }
+      }
+    },
+    {
+      "vestiging": "Stella Assen",
+      "plaats": "Assen",
+      "adres": "Zeilmakerstraat 30, 9403 VA Assen",
+      "telefoon": "088-2526371",
+      "email": "klantenservice@stellanext.nl",
+      "speciale_openingstijden": [
+        "Let op: Wij zijn van 25-12 t/m 01-01 gesloten"
+      ],
+      "openingstijden": {
+        "fietsenwinkel": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        },
+        "werkplaats": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        }
+      }
+    },
+    {
+      "vestiging": "Stella Best",
+      "plaats": "Best",
+      "adres": "Bosseweg 35, 5682 BA Best",
+      "telefoon": "088-2526372",
+      "email": "klantenservice@stellanext.nl",
+      "speciale_openingstijden": [
+        "Let op: Wij zijn van 25-12 t/m 01-01 gesloten"
+      ],
+      "openingstijden": {
+        "fietsenwinkel": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        },
+        "werkplaats": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        }
+      }
+    },
+    {
+      "vestiging": "Stella Beverwijk",
+      "plaats": "Beverwijk",
+      "adres": "Parallelweg 41, 1948 NK Beverwijk",
+      "telefoon": "088-2526373",
+      "email": "klantenservice@stellanext.nl",
+      "speciale_openingstijden": [
+        "Let op: Wij zijn van 25-12 t/m 01-01 gesloten"
+      ],
+      "openingstijden": {
+        "fietsenwinkel": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        },
+        "werkplaats": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        }
+      }
+    },
+    {
+      "vestiging": "Stella Breda",
+      "plaats": "Breda",
+      "adres": "Ettensebaan 23A, 4813 AH Breda",
+      "telefoon": "088-2526374",
+      "email": "klantenservice@stellanext.nl",
+      "speciale_openingstijden": [
+        "Let op: Wij zijn van 25-12 t/m 01-01 gesloten"
+      ],
+      "openingstijden": {
+        "fietsenwinkel": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        },
+        "werkplaats": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        }
+      }
+    },
+    {
+      "vestiging": "Stella Heerhugowaard",
+      "plaats": "Heerhugowaard",
+      "adres": "Erasmuslaan 3, 1702 GH Heerhugowaard",
+      "telefoon": "088-2526375",
+      "email": "klantenservice@stellanext.nl",
+      "speciale_openingstijden": [
+        "Let op: Wij zijn van 25-12 t/m 01-01 gesloten"
+      ],
+      "openingstijden": {
+        "fietsenwinkel": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        },
+        "werkplaats": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        }
+      }
+    },
+    {
+      "vestiging": "Stella Houten",
+      "plaats": "Houten",
+      "adres": "Hoofdveste 26, 3992 DG Houten",
+      "telefoon": "088-2526376",
+      "email": "klantenservice@stellanext.nl",
+      "speciale_openingstijden": [
+        "Let op: Wij zijn van 25-12 t/m 01-01 gesloten"
+      ],
+      "openingstijden": {
+        "fietsenwinkel": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        },
+        "werkplaats": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        }
+      }
+    },
+    {
+      "vestiging": "Stella Nunspeet",
+      "plaats": "Nunspeet",
+      "adres": "Oosteinderweg 90, 8072 PD Nunspeet",
+      "telefoon": "088-2526377",
+      "email": "klantenservice@stellanext.nl",
+      "speciale_openingstijden": [
+        "Let op: Wij zijn van 25-12 t/m 01-01 gesloten"
+      ],
+      "openingstijden": {
+        "fietsenwinkel": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        },
+        "werkplaats": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        }
+      }
+    },
+    {
+      "vestiging": "Stella Nuth",
+      "plaats": "Nuth",
+      "adres": "Stationstraat 294, 6361 BH Nuth",
+      "telefoon": "088-2526378",
+      "email": "klantenservice@stellanext.nl",
+      "speciale_openingstijden": [
+        "Let op: Wij zijn van 25-12 t/m 01-01 gesloten"
+      ],
+      "openingstijden": {
+        "fietsenwinkel": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        },
+        "werkplaats": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        }
+      }
+    },
+    {
+      "vestiging": "Stella Ridderkerk",
+      "plaats": "Ridderkerk",
+      "adres": "Noordenweg 26, 2984 AG Ridderkerk",
+      "telefoon": "088-2526379",
+      "email": "klantenservice@stellanext.nl",
+      "speciale_openingstijden": [
+        "Let op: Wij zijn van 25-12 t/m 01-01 gesloten"
+      ],
+      "openingstijden": {
+        "fietsenwinkel": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        },
+        "werkplaats": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        }
+      }
+    },
+    {
+      "vestiging": "Stella Schiedam",
+      "plaats": "Schiedam",
+      "adres": "Overschieseweg 152, 3125 AR Schiedam",
+      "telefoon": "088-2526380",
+      "email": "klantenservice@stellanext.nl",
+      "speciale_openingstijden": [
+        "Let op: Wij zijn van 25-12 t/m 01-01 gesloten"
+      ],
+      "openingstijden": {
+        "fietsenwinkel": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        },
+        "werkplaats": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        }
+      }
+    },
+    {
+      "vestiging": "Stella Wijchen",
+      "plaats": "Wijchen",
+      "adres": "Nieuweweg 285, 6603 BN Wijchen",
+      "telefoon": "088-2526381",
+      "email": "klantenservice@stellanext.nl",
+      "speciale_openingstijden": [
+        "Let op: Wij zijn van 25-12 t/m 01-01 gesloten"
+      ],
+      "openingstijden": {
+        "fietsenwinkel": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        },
+        "werkplaats": {
+          "maandag": "09:00 - 17:30",
+          "dinsdag": "09:00 - 17:30",
+          "woensdag": "09:00 - 17:30",
+          "donderdag": "09:00 - 17:30",
+          "vrijdag": "09:00 - 17:30",
+          "zaterdag": "09:00 - 17:00",
+          "zondag": "Gesloten"
+        }
+      }
+    }
+  ]
+}
